@@ -28,7 +28,7 @@ jobs:
       - run: npm install
       - run: npm run tsc
       - name: Set package version
-        run: sed -i "s/\"version\": \".*\"/\"version\": \"${{ github.event.release.tag_name }}\"/" package.json
+        run: npm version
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.PUBLISH_NPM_TOKEN}}
