@@ -1,0 +1,27 @@
+{
+  "name": "kintone-uploader-env",
+  "version": "1.0.6",
+  "description": "🚀 Development tool based on @kintone/customize-uploader that allows reading variables from .env during development.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "watch": "tsc -w",
+    "tsc": "tsc"
+  },
+  "bin": {
+    "kintone-uploader-env": "dist/index.js"
+  },
+  "files": ["dist/", "package.json", "README.md"],
+  "keywords": ["kintone"],
+  "author": "westleft",
+  "license": "MIT",
+  "dependencies": {
+    "@kintone/customize-uploader": "^8.0.11",
+    "commander": "^12.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.11",
+    "typescript": "^5.4.5"
+  }
+}
