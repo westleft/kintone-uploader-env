@@ -13,6 +13,10 @@
   },
   "files": ["dist/", "package.json", "README.md"],
   "keywords": ["kintone"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/westleft/kintone-uploader-env.git"
+  },
   "author": "westleft",
   "license": "MIT",
   "dependencies": {
