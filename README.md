@@ -16,7 +16,7 @@ Create a `.env` file in the root directory of your project and fill in the follo
 KINTONE_BASE_URL=
 KINTONE_USERNAME=
 KINTONE_PASSWORD=
-APP_ID
+APP_ID=
 ```
 
 You can also add commands to your `package.json` for convenience:
