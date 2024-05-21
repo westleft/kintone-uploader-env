@@ -1,5 +1,7 @@
 # kintone-uploader-env
 
+[English](https://github.com/westleft/kintone-uploader-env) | 繁體中文
+
 🚀 基於基於 [@kintone/customize-uploader](https://www.npmjs.com/package/@kintone/customize-uploader) 的開發工具，在開發階段可以讀取 `.env` 的變數並使用。
 
 ## 安裝

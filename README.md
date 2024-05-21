@@ -1,5 +1,7 @@
 # kintone-uploader-env
 
+English | [繁體中文](https://github.com/westleft/kintone-uploader-env/blob/main/README-zh.md)
+
 🚀 Development tool based on [@kintone/customize-uploader](https://www.npmjs.com/package/@kintone/customize-uploader) that allows reading variables from `.env` during development.
 
 ## Installation
