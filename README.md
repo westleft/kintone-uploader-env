@@ -42,4 +42,5 @@ npx kintone-uploader-env
 Options
     -e Specify the path to the .env file, default is .env
     -m Specify the path to the mainfest.json file, default is mainfests/dev.json
+    -app Specify the key to read the app ID from the .env file
 ```

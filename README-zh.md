@@ -42,4 +42,5 @@ npx kintone-uploader-env
 Options
     -e 指定 .env 的檔案路徑，預設為 .env
     -m 指定 mainfest.json 的檔案路徑，預設為 mainfests/dev.json
+    -app, 指定 .env 檔案中的 key 值
 ```
