@@ -13,7 +13,7 @@ const getKintoneInfo = (appIdKey: string = ''): envType | undefined => {
   if (appIdKey) {
     APP_ID = process.env[appIdKey]
   } else {
-    APP_ID = process.env['APP']
+    APP_ID = process.env['APP_ID']
   }
 
   return { KINTONE_BASE_URL, KINTONE_USERNAME, KINTONE_PASSWORD, APP_ID }
