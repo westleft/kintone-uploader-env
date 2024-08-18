@@ -6,6 +6,8 @@ export const loadEnv = () => {
     const program = new Command()
 
     program
+      .option('-t, --type <type>', '', 'customize')
+      .option('-p, --pluginFilePath <pluginFilePath>', '', 'plugin.zip')
       .option('-e, --env <env>', 'Specify the .env file to use', '.env')
       .option('-m, --mainfest <mainfest>', 'Specify the manifest file to use', './mainfests/dev.json')
       .option('-app, --appIdKey <appIdKey>', 'Specify the key to read the app ID from the .env file')

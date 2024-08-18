@@ -40,6 +40,8 @@ npx kintone-uploader-env
 
 ```shell
 Options
+    -t 上傳類型，可指定 customize 或是 plugin，預設為 customize
+    -p 外掛檔案路徑，預設為 plugin.zip
     -e 指定 .env 的檔案路徑，預設為 .env
     -m 指定 mainfest.json 的檔案路徑，預設為 mainfests/dev.json
     -app, 指定 .env 檔案中的 key 值

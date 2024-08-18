@@ -40,6 +40,8 @@ npx kintone-uploader-env
 
 ```shell
 Options
+    -t Upload type, can specify customize or plugin, default is customize.
+    -p Path to the plugin file, default is plugin.zip.
     -e Specify the path to the .env file, default is .env
     -m Specify the path to the mainfest.json file, default is mainfests/dev.json
     -app Specify the key to read the app ID from the .env file
