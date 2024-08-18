@@ -20,7 +20,7 @@ const getKintoneInfo = (appIdKey: string = ''): envType | undefined => {
 }
 
 export const getCommand = (options: OptionValues) => {
-  const { mainfest, appIdKey } = options
+  const { type, pluginFilePath, mainfest, appIdKey } = options
   const kintoneInfo = getKintoneInfo(appIdKey)
   if (!kintoneInfo) {
     return
@@ -31,9 +31,14 @@ export const getCommand = (options: OptionValues) => {
     editJsonFile({
       mainfest,
       key: 'app',
-      value: APP_ID    
+      value: APP_ID
     })
   }
-  
+
+  if (type === 'plugin') {
+    console.log('plugin uploading...')
+    return `npx kintone-plugin-uploader --base-url ${KINTONE_BASE_URL} --username ${KINTONE_USERNAME} --password ${KINTONE_PASSWORD} ${pluginFilePath}`
+  }
+
   return `npx kintone-customize-uploader --base-url ${KINTONE_BASE_URL} --username ${KINTONE_USERNAME} --password ${KINTONE_PASSWORD} ${mainfest}`
 }
