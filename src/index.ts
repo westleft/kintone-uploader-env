@@ -9,6 +9,7 @@ const main = () => {
     const options = loadEnv()
 
     const command = getCommand(options!)
+   
     if (!command) {
       console.log('Please check .env file is fillout')
       return

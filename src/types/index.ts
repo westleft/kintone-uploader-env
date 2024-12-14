@@ -3,4 +3,5 @@ export interface envType {
   KINTONE_USERNAME: string
   KINTONE_PASSWORD: string
   APP_ID?: string
+  GUEST_SPACE?: string
 }
