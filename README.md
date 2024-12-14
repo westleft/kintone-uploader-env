@@ -19,6 +19,7 @@ KINTONE_BASE_URL=
 KINTONE_USERNAME=
 KINTONE_PASSWORD=
 APP_ID=
+GUEST_SPACE=
 ```
 
 You can also add commands to your `package.json` for convenience:
