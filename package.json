@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
     "update:customize": "node ./dist/index.js",
-    "update:plugin": "node ./dist/index.js -t plugin",
-    "watch": "tsc -w",
-    "tsc": "tsc"
+    "update:plugin": "node ./dist/index.js -t plugin"
   },
   "bin": {
     "kintone-uploader-env": "dist/index.js"
@@ -31,10 +31,14 @@
     "@kintone/customize-uploader": "^8.0.11",
     "@kintone/plugin-uploader": "^9.1.2",
     "commander": "^12.0.0",
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.5",
+    "vite": "^6.0.3",
+    "vite-plugin-dts": "^4.3.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^3.7.1",
     "@types/node": "^20.12.11",
-    "typescript": "^5.4.5"
+    "typescript": "^5.4.5",
+    "vite-plugin-node-polyfills": "^0.22.0"
   }
 }
